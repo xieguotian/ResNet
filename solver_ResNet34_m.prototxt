@@ -1,0 +1,20 @@
+net: "proto/baseline/ResNet34_m.prototxt"
+test_initialization: false
+test_iter: 1000
+test_interval: 5000
+base_lr: 0.1
+#lr_policy: "step"
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue:150000
+stepvalue:300000
+stepvalue:450000
+display: 20
+max_iter: 500000
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 50000
+snapshot_prefix: "proto/baseline/snapshot/ResNet34_m4"
+solver_mode: GPU
+average_loss: 20
+type: "Nesterov"
