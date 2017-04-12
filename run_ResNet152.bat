@@ -1,0 +1,2 @@
+rem "caffe_run2/caffe_best_model.exe" train --solver=proto/baseline/solver_ResNet34_m.prototxt --snapshot=proto/baseline/snapshot/ResNet34_m2_iter_400000.solverstate --gpu=all --log_name=ResNet34_m3 --log_dirs=proto/baseline/snapshot/log
+"caffe_run2/caffe_best_model.exe" train --solver=proto/baseline/solver_ResNet152.prototxt --snapshot=proto/baseline/snapshot/ResNet152_2_iter_450000.solverstate --gpu=all --log_name=ResNet152_2 --log_dirs=proto/baseline/snapshot/log

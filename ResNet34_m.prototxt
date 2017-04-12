@@ -24,7 +24,7 @@ layer {
 		max_length: 480
 	}
 	color_shift: true
-	#color_jitter: true
+	color_jitter: true
 	#is_aspect_ration: true
   }
   data_param {
