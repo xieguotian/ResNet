@@ -28,10 +28,10 @@ layer {
 	#is_aspect_ration: true
   }
   data_param {
-	source: "classification/data/Imagenet_org_train_lmdb"
-	#source: "D:\\users\\v-guoxie\\data\\Imagenet_org_train_lmdb"
-	key_files: "classification/data/train_org_key.txt"
-	#key_files: "D:\\users\\v-guoxie\\data\\train_org_key_kl.txt"
+	#source: "classification/data/Imagenet_org_train_lmdb"
+	source: "D:\\users\\v-guoxie\\data\\Imagenet_org_train_lmdb"
+	#key_files: "classification/data/train_org_key.txt"
+	key_files: "D:\\users\\v-guoxie\\data\\train_org_key_kl.txt"
     batch_size: 64
     backend: LMDB
 	shuffle: true
@@ -65,8 +65,8 @@ layer {
 	}
   }
   data_param {
-	source:"classification/data/imagenet_org_val_lmdb"
-	#source: "D:\\users\\v-guoxie\\data\\imagenet_org_val_lmdb"
+	#source:"classification/data/imagenet_org_val_lmdb"
+	source: "D:\\users\\v-guoxie\\data\\imagenet_org_val_lmdb"
     batch_size: 50
     backend: LMDB
 	#scale: 0.00392
